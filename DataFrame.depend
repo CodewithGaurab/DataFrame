@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1555314288 source:/home/gaurab/Codes/DataFrame/src/Data.cpp
+	"Data.h"
+
+1555314285 /home/gaurab/Codes/DataFrame/include/Data.h
+	<string>
+
+1555314298 source:/home/gaurab/Codes/DataFrame/main.cpp
+	<iostream>
+	<vector>
+	<cstring>
+	<fstream>
+	"DataFrame.h"
+
+1555314352 /home/gaurab/Codes/DataFrame/include/DataFrame.h
+	"Data.h"
+	<vector>
+
+1555314294 source:/home/gaurab/Codes/DataFrame/src/DataFrame.cpp
+	"Data.h"
+	"DataFrame.h"
+
