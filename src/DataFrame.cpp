@@ -1,9 +1,21 @@
 #include "Data.h"
 #include "DataFrame.h"
 
-DataFrame::DataFrame(std::vector<Data> datas)
+DataFrame::DataFrame(const std::string url)
 {
-	data = datas;
+	std::vector<Data> d;
+
+	std::ifstream file;
+	std::string line;
+	file.open(url);
+	while(file)
+	{
+		getline(file,line);
+		Data a(line);
+		d.push_back(a);
+	}
+	file.close();
+	data = d;
 }
 
 

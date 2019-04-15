@@ -2,6 +2,8 @@
 #define DATAFRAME_H
 #include "Data.h"
 #include <vector>
+#include <string>
+#include <fstream>
 class DataFrame
 {
 	private:
@@ -10,7 +12,7 @@ class DataFrame
 
 	public:
 
-		DataFrame(std::vector<Data> datas);
+		DataFrame(const std::string);
 		void add(Data d);
 		Data get_columns();
 		Data get_row(int index);
